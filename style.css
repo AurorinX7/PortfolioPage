@@ -1,52 +1,47 @@
-body{
-    background-color: rgb(25, 25, 25);
+body {
+  background-color: rgb(25, 25, 25);
+  margin: 0;
+  padding: 0;
 }
 
 #layout {
-    background-color: rgb(15, 15, 15);
-    margin: 40px;
-    height: 865px;
-    width: 95%;
-    border: 10px solid rgb(15, 15, 15b);
-    border-radius: 3%;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    box-sizing: border-box;
-    padding: 20px;;
+  background-color: rgb(15, 15, 15);
+  margin: 40px auto;
+  height: 865px;
+  width: 95%;
+  border: 10px solid rgb(15, 15, 15);
+  border-radius: 3%;
+  position: relative;
+  box-sizing: border-box;
+  padding: 20px;
 }
 
-#element {
-    height: 47.5%;
-    width: 48.5%;
-    background-color: #8DAB7F;
-    border-radius: 3%;
+/* Shared style for all 4 boxes */
+.box {
+  position: absolute;
+  height: 47.5%;
+  width: 48.5%;
+  background-color: #8DAB7F;
+  border-radius: 3%;
 }
 
-#element2 {
-    height: 47.5%;
-    width: 48.5%;
-    background-color: #8DAB7F;
-    margin-left: auto;
-    border-radius: 3%;
+/* Corner positioning with padding offset */
+.top-left {
+  top: 20px;
+  left: 20px;
 }
 
-#element3 {
-    height: 47.5%;
-    width: 48.5%;
-    background-color: #8DAB7F;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    border-radius: 3%;
+.top-right {
+  top: 20px;
+  right: 20px;
 }
 
-#element4 {
-    height: 47.5%;
-    width: 48.5%;
-    background-color: #8DAB7F;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    border-radius: 3%;
+.bottom-left {
+  bottom: 20px;
+  left: 20px;
+}
+
+.bottom-right {
+  bottom: 20px;
+  right: 20px;
 }
