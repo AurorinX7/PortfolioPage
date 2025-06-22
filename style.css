@@ -1,47 +1,47 @@
 body {
-  background-color: rgb(25, 25, 25);
-  margin: 0;
-  padding: 0;
-}
-
-#layout {
-  background-color: rgb(15, 15, 15);
-  margin: 40px auto;
-  height: 865px;
-  width: 95%;
-  border: 10px solid rgb(15, 15, 15);
-  border-radius: 3%;
-  position: relative;
-  box-sizing: border-box;
-  padding: 20px;
-}
-
+    background-color: rgb(25, 25, 25);
+    margin: 0;
+    padding: 0;
+  }
+  
+  #layout {
+    background-color: rgb(15, 15, 15);
+    margin: 40px auto;
+    height: 865px;
+    width: 95%;
+    border: 10px solid rgb(15, 15, 15);
+    border-radius: 3%;
+    position: relative;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  
 /* Shared style for all 4 boxes */
 .box {
-  position: absolute;
-  height: 47.5%;
-  width: 48.5%;
-  background-color: #8DAB7F;
-  border-radius: 3%;
+    position: absolute;
+    height: 44%; /* Reduced from 47.5% */
+    width: 47%;  /* Reduced from 48.5% */
+    background-color: #8DAB7F;
+    border-radius: 3%;
 }
 
 /* Corner positioning with padding offset */
 .top-left {
-  top: 20px;
-  left: 20px;
+    top: 20px;
+    left: 20px;
 }
 
 .top-right {
-  top: 20px;
-  right: 20px;
+    top: 20px;
+    right: 20px;
 }
 
 .bottom-left {
-  bottom: 20px;
-  left: 20px;
+    bottom: 20px;
+    left: 20px;
 }
 
 .bottom-right {
-  bottom: 20px;
-  right: 20px;
+    bottom: 20px;
+    right: 20px;
 }
