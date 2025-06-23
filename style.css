@@ -51,18 +51,36 @@ body {
 }
 
 #circle {
-    background-color: yellow;
-    background-image: url(photo.png);
+    background-image: url('photo.png');
     background-size: cover;
-    z-index: 10;
+    background-position: center;
     border-radius: 50%;
     height: 600px;
     width: 600px;
-    display: block; 
-    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s, color 0.5s;
+  }
+  
+  #circle:hover {
+    filter: grayscale(100%);
+  }
+  
+  .circle-text {
+    color: black;
+    font-size: 50px;
+    font-family: markerfelt, sans-serif;
+    font-weight: bold;
+    opacity: 0;
     transition: all 0.5s;
-}
-
+  }
+  
+  #circle:hover .circle-text {
+    opacity: 1;
+  }
 #circle:hover {
     transform: scale(1.1);
 }
