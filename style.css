@@ -14,6 +14,9 @@ body {
     position: relative;
     box-sizing: border-box;
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
 /* Shared style for all 4 boxes */
@@ -21,8 +24,9 @@ body {
     position: absolute;
     height: 44%; /* Reduced from 47.5% */
     width: 47%;  /* Reduced from 48.5% */
-    background-color: #8DAB7F;
+    background-color: rgb(9, 9, 9);
     border-radius: 3%;
+    transition: all 0.5s;
 }
 
 /* Corner positioning with padding offset */
@@ -45,3 +49,27 @@ body {
     bottom: 20px;
     right: 20px;
 }
+
+#circle {
+    background-color: yellow;
+    background-image: url(photo.png);
+    background-size: cover;
+    z-index: 10;
+    border-radius: 50%;
+    height: 600px;
+    width: 600px;
+    display: block; 
+    margin: 20px auto;
+    transition: all 0.5s;
+}
+
+#circle:hover {
+    transform: scale(1.1);
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+
+
