@@ -1,0 +1,31 @@
+body {
+    background-color: black;
+    color: aliceblue;
+}
+
+* {
+    font-family: monospace;
+}
+
+#heading {
+    text-align: center;
+    font-size: 50px;
+    position: relative; /* Required for the pseudo-element */
+    color: aliceblue;
+}
+
+#heading::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: aliceblue;
+    transition: width 0.7s;
+    transform: translateX(-50%);
+}
+
+#heading:hover::after {
+    width: 40%;
+}
