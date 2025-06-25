@@ -60,3 +60,25 @@ body {
 #list:hover::after {
     width: 100%; /* Expand underline to the full width of the text */
 }
+
+#image-container {
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center;    /* Centers the image vertically */
+    height: 300px;
+    width: 500px;
+    overflow: hidden; /* Prevents overflow issues */
+    float: right;
+}
+
+#image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.5s, filter 0.5s;
+}
+
+#image:hover {
+    transform: scale(1.05);
+    filter: brightness(0.5);
+}
