@@ -80,5 +80,33 @@ body {
 
 #image:hover {
     transform: scale(1.05);
-    filter: brightness(0.5);
+    filter: brightness(0.7);
+}
+
+#content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Optional: limit ul width so it doesn't eat up space */
+ul {
+    max-width: 70%;
+}
+
+/* Remove float from image container */
+#image-container {
+    height: 300px;
+    width: 500px;
+    overflow: hidden;
+}
+
+#para {
+    font-size: 22px;
+    transition: all 0.5s;
+}
+
+#para:hover {
+    color: lightblue;
 }
