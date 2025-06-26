@@ -110,3 +110,66 @@ ul {
 #para:hover {
     color: lightblue;
 }
+
+#list2 {
+    font-size: 35px;
+    font-weight: bold;
+    position: relative;
+    display: inline-block; /* Keep inline-block for proper width */
+    text-align: right;
+    margin-left: 0;
+}
+
+#list2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0; /* Align the underline to the start of the text */
+    width: 0;
+    height: 2px;
+    background-color: aliceblue;
+    transition: width 0.5s; /* Smooth transition */
+}
+
+#list2:hover::after {
+    width: 100%; /* Expand underline to the full width of the text */
+}
+
+/* Add consistent spacing between sections */
+#content-wrapper {
+    margin-bottom: 40px; /* Space below the Advanced Tuck Planche section */
+}
+
+ul {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+li {
+    margin-bottom: 20px; /* Add spacing between list items */
+}
+
+#list2 {
+    margin-top: 40px; /* Add consistent space above the Simple Webpage section */
+}
+
+#para {
+    margin-bottom: 20px; /* Add spacing below paragraphs */
+}
+
+#webpage-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+#lower-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 500px;
+    overflow: hidden;
+    float: right;
+    margin-top: 50px;
+}

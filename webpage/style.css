@@ -1,0 +1,277 @@
+  
+* {
+    font-family: Times New Roman;
+  }
+  
+  #chemistry {
+      color: #4cec19;
+      font-family: Times New Roman;
+      text-transform: uppercase;
+      border-width: 3px;
+      border-color: #00e118;
+      border-style: solid;
+      width: 160px;
+      text-align: center;
+      border-radius: 10px;
+      transition: all 0.6s;
+  }
+  
+  #maths {
+      color: #0077f0;
+      font-family: Times New Roman;
+      text-transform: uppercase;
+      border-width: 3px;
+      border-color: #0259ff;
+      border-style: solid;
+      width: 100px;
+      text-align: center;
+      border-radius: 10px;
+      transition: all 0.6s;
+  }
+  
+  #chemist {
+      color: #9f10d3;
+  }
+  
+  #mathematics {
+      color: #9f10d3;
+  }
+  
+  #submit {
+      color: #40e3f7;
+      background-color: #1e0b7d;
+      font-family: Times New Roman;
+      margin-left: 10px;
+      transition: all 0.5s;
+  }
+  
+  i {
+      color: #9f10d3;
+  }
+  
+  #form {
+    text-align: center;
+    text-transform: uppercase;
+    border-width: 3px;
+    border-color: #0000007d;
+    border-style: solid;
+    border-radius: 15px;
+  }
+  
+  .class1 {
+    text-align: center;
+  }
+  
+  #ytvideo {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+  
+  #sukuna {
+    color: #ff9999;
+    transition: all 0.5s;
+  }
+  
+  #gojo {
+    color: #add8e6;
+    transition: all 0.5s
+  }
+  
+  b {
+    color: #9f10d3;
+  }
+  
+  body {
+    background-image: url("image.jpg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #navigation {
+    background-color: black;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+   justify-content: space-evenly; 
+    border: 3px solid #ffab08;
+  }
+  
+  #navigation a {
+    color: #ffa829;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 10px; 
+    padding: 8px;
+    transition-property: all;
+    transition-duration: 0.5s;
+  }
+  
+  #navigation p {
+    color: #ffa829;
+    margin: 0;
+    padding: 8px;
+    font-size: 20px;
+    border: 2px solid #ffbf2c;
+    transition-property: all;
+    transition-duration: 0.5s;
+  }
+  
+  #submit:active {
+    border: 2px solid black;
+    color: #1e0b7d;
+    background-color: #40e3f7;
+  }
+  
+  #navigation a:active {
+    color: #ffff15;
+  }
+  
+  #navigation a:hover {
+    color: aqua;
+  }
+  
+  #navigation p:hover {
+    color: aqua;
+  }
+  
+  #link {
+    transition-property: all;
+    transition-duration: 0.5s;
+  }
+  
+  #link:hover {
+    color: rgb(217, 0, 255);
+  }
+  
+  #next {
+    transition-property: all;
+    transition-duration: 0.5s;
+  }
+  
+  #next:hover {
+    color: rgb(217, 0, 255);
+  }
+  
+  #submit:hover {
+    transform: scale(1.5);
+  }
+  
+  #chemistry:hover {
+    transform: translate(50px);
+  }
+  
+  #maths:hover {
+    transform: translate(50px);
+  }
+  
+  #sukuna:hover{
+    color: darkred;
+  }
+  
+  #gojo:hover{
+    color: darkblue
+  }
+  
+  #emoji {
+    transition: all 0.3s;
+  }
+  
+  #emoji:hover {
+    transform: scale(1.1);
+  }
+  
+  .loader {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: 20px solid black;
+    border-top: 20px solid yellow;
+    animation: loading 1.5s 0s infinite normal ease-in-out
+  }
+  
+  /* From Uiverse.io by Yaya12085 */ 
+  .container {
+  }
+  
+  .label {
+    height: 60px;
+    width: 120px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    -webkit-box-shadow: inset 0 0 5px 4px rgba(255, 255, 255, 1),
+      inset 0 0 20px 1px rgba(0, 0, 0, 0.488), 10px 20px 30px rgba(0, 0, 0, 0.096),
+      inset 0 0 0 3px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 5px 4px rgba(255, 255, 255, 1),
+      inset 0 0 20px 1px rgba(0, 0, 0, 0.488), 10px 20px 30px rgba(0, 0, 0, 0.096),
+      inset 0 0 0 3px rgba(0, 0, 0, 0.3);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    -webkit-transition: -webkit-transform 0.4s;
+    transition: -webkit-transform 0.4s;
+    transition: transform 0.4s;
+  }
+  
+  .label:hover {
+    -webkit-transform: perspective(100px) rotateX(5deg) rotateY(-5deg);
+    transform: perspective(100px) rotateX(5deg) rotateY(-5deg);
+  }
+  
+  #checkbox:checked ~ .label:hover {
+    -webkit-transform: perspective(100px) rotateX(-5deg) rotateY(5deg);
+    transform: perspective(100px) rotateX(-5deg) rotateY(5deg);
+  }
+  
+  #checkbox {
+    display: none;
+  }
+  
+  #checkbox:checked ~ .label::before {
+    left: 70px;
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #414141 70%);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  
+  .label::before {
+    position: absolute;
+    content: "";
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #000000;
+    background-image: linear-gradient(
+      130deg,
+      #757272 10%,
+      #ffffff 11%,
+      #726f6f 62%
+    );
+    left: 10px;
+    -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.3),
+      10px 10px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.3), 10px 10px 10px rgba(0, 0, 0, 0.3);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  
+  
+  @keyframes loading {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
