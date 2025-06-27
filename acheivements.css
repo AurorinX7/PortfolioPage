@@ -54,7 +54,7 @@ body {
     width: 0;
     height: 2px;
     background-color: aliceblue;
-    transition: width 0.5s; /* Smooth transition */
+    transition: width 0.7s; /* Smooth transition */
 }
 
 #list:hover::after {
@@ -80,7 +80,7 @@ body {
 
 #image:hover {
     transform: scale(1.05);
-    filter: brightness(0.7);
+    filter: brightness(0.9);
 }
 
 #content-wrapper {
@@ -172,4 +172,33 @@ li {
     overflow: hidden;
     float: right;
     margin-top: 50px;
+}
+
+#link2 {
+    font-size: 22px;
+    color: aqua;
+    text-decoration: none;
+    transition: all 0.7s;
+}
+
+#link2:hover {
+    color: yellow;
+}
+
+#icon-container {
+    height: 300px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#icon {
+    font-size: 200px; /* Set the size of the Font Awesome icon */
+    transition: transform 0.5s, filter 0.5s;
+}
+
+#icon:hover {
+    transform: scale(1.05);
+    filter: brightness(0.9);
 }
