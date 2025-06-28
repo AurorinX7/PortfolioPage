@@ -237,3 +237,52 @@ li {
     animation-delay: 0.5s;
 }
 
+#side-menu {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Start hidden off-screen */
+  width: 250px;
+  height: 100%;
+  background: #222;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  transition: left 0.3s;
+  z-index: 1000;
+}
+#side-menu.open {
+  left: 0; /* Slide in */
+}
+#side-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;
+  font-size: 18px;
+  transition: all 0.5s;
+  margin-top: 25px;
+}
+#menu-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1100;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+#side-menu a:hover {
+    color: aqua;
+}
+
+#menu-btn:hover {
+    color: yellow;
+}
+
+#menu-btn.active {
+  position: fixed;
+}
