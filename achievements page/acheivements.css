@@ -74,7 +74,7 @@ body {
 #image {
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     transition: transform 0.5s, filter 0.5s;
 }
 
@@ -202,3 +202,38 @@ li {
     transform: scale(1.05);
     filter: brightness(0.9);
 }
+
+/* Add this at the end of your CSS file */
+
+/* Fade-in and slide-up animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply the animation to all main wrappers */
+#container,
+#content-wrapper,
+#image-container,
+#lower-image-container {
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+}
+
+/* Stagger the animation for a nicer effect */
+#container {
+    animation-delay: 0.1s;
+}
+#content-wrapper {
+    animation-delay: 0.3s;
+}
+#image-container, #lower-image-container {
+    animation-delay: 0.5s;
+}
+

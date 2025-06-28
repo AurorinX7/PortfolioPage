@@ -58,7 +58,7 @@ body {
 }
 
 #circle {
-    background-image: url('photo.png');
+    background-image: url('images/photo.png');
     background-size: cover;
     background-position: center;
     border-radius: 50%;
