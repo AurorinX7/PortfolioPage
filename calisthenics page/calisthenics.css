@@ -78,14 +78,60 @@ body {
     color: red;
 }
 
+
 #skill {
-    position: relative; /* Create a positioning context */
-    height: 230px;
-    width: 20%;
-    margin-top: 20px;
-    background-image: url(https://images.vexels.com/media/users/3/242698/isolated/preview/4962b8ae920c2187562aae07ce0babd4-man-doing-gymnastics-silhouette.png);
-    background-size: cover;
-    background-color: white;
+    position: relative;
+    height: 60px;
+    width: 40%;
+    margin: 20px 0;
+    background-color: #bfa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #0002;
+    user-select: none;
+    z-index: 1;
+}
+
+.skill-details {
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 40%;
+    background: aqua;
+    border-radius: 8px;
+    opacity: 0;
+    transform: scale(0.7);
+    transition: opacity 0.4s, transform 0.4s;
+    z-index: 10;
+    padding: 15px;
+}
+
+#skill-details1 {  
+    top: 0px;
+    left: 350px;
+}
+
+#skill-details2 {  
+    top: 0px;
+    left: 750px;
+}
+
+#skill-details3 {  
+    top: 0px;
+    left: 1150px;
+    height: 37px;
+}
+
+
+.skill-details.active {
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+    animation: popDetails 0.4s cubic-bezier(.68,-0.55,.27,1.55);
 }
 
 @keyframes popDetails {
@@ -99,24 +145,3 @@ body {
     }
 }
 
-#skill-details {
-    display: none;
-    position: absolute;
-    top: 553px;
-    left: 450px;
-    background-color: aqua;
-    height: 200px;
-    width: 20%;
-    z-index: 10;
-    opacity: 0;
-    transform: scale(0.7);
-    transform-origin: top;
-    transition: opacity 0.4s, transform 0.4s;
-}
-
-#skill-details.active {
-    display: block;
-    animation: popDetails 0.4s cubic-bezier(.68,-0.55,.27,1.55);
-    opacity: 1;
-    transform: scale(1);
-}
