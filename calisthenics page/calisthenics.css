@@ -78,3 +78,45 @@ body {
     color: red;
 }
 
+#skill {
+    position: relative; /* Create a positioning context */
+    height: 230px;
+    width: 20%;
+    margin-top: 20px;
+    background-image: url(https://images.vexels.com/media/users/3/242698/isolated/preview/4962b8ae920c2187562aae07ce0babd4-man-doing-gymnastics-silhouette.png);
+    background-size: cover;
+    background-color: white;
+}
+
+@keyframes popDetails {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+#skill-details {
+    display: none;
+    position: absolute;
+    top: 553px;
+    left: 450px;
+    background-color: aqua;
+    height: 200px;
+    width: 20%;
+    z-index: 10;
+    opacity: 0;
+    transform: scale(0.7);
+    transform-origin: top;
+    transition: opacity 0.4s, transform 0.4s;
+}
+
+#skill-details.active {
+    display: block;
+    animation: popDetails 0.4s cubic-bezier(.68,-0.55,.27,1.55);
+    opacity: 1;
+    transform: scale(1);
+}
