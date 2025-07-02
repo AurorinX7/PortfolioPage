@@ -81,7 +81,7 @@ body {
 
 #skill {
     position: relative;
-    height: 60px;
+    height: 230px;
     width: 40%;
     margin: 20px 0;
     background-color: #bfa;
@@ -110,23 +110,6 @@ body {
     padding: 15px;
 }
 
-#skill-details1 {  
-    top: 0px;
-    left: 350px;
-}
-
-#skill-details2 {  
-    top: 0px;
-    left: 750px;
-}
-
-#skill-details3 {  
-    top: 0px;
-    left: 1150px;
-    height: 37px;
-}
-
-
 .skill-details.active {
     display: block;
     opacity: 1;
@@ -144,4 +127,91 @@ body {
         transform: scale(1);
     }
 }
+
+#skill-details1 {  
+    top: 0px;
+    left: 350px;
+    height: 200px;
+}
+
+#skill-details2 {  
+    top: 0px;
+    left: 750px;
+    height: 200px;
+}
+
+#skill-details3 {  
+    top: 0px;
+    left: 1150px;
+    height: 200px;
+}
+
+#skill-details4 {
+    top: 0px;
+    left: 1550px;
+    height: 200px;
+}
+
+#skill-details1-2 {  
+    top: 0px;
+    left: 350px;
+    height: 200px;
+}
+
+#skill-details2-2 {  
+    top: 0px;
+    left: 750px;
+    height: 200px;
+}
+
+#skill-details3-2 {  
+    top: 0px;
+    left: 1150px;
+    height: 200px;
+}
+
+#skill-details4-2 {
+    top: 0px;
+    left: 1550px;
+    height: 200px;
+}
+
+#skill-2 {
+    position: relative;
+    height: 230px;
+    width: 40%;
+    margin: 20px 0;
+    background-color: #bfa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #0002;
+    user-select: none;
+    z-index: 1;
+}
+
+.fade-text {
+    position: absolute;
+    top: 100px; /* adjust as needed to be in front of #skill-2 */
+    left: 500px;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    border-radius: 8px;
+    padding: 10px 0;
+    opacity: 1;
+    pointer-events: none;
+    transition: opacity 1.8s;
+    z-index: 20;
+}
+
+.fade-text.hide {
+    opacity: 0;
+    transition: opacity 1.8s;
+}
+
 
