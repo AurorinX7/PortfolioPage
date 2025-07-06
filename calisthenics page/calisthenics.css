@@ -181,16 +181,16 @@ body {
     height: 230px;
     width: 40%;
     margin: 20px 0;
-    background-color: #bfa;
+    background-image: url(https://i.redd.it/t4thwoiudncb1.jpg);
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.2em;
     cursor: pointer;
     border-radius: 10px;
-    box-shadow: 0 2px 8px #0002;
     user-select: none;
-    z-index: 1;
+    transition: all 0.5s;
 }
 
 .fade-text {
@@ -204,14 +204,18 @@ body {
     border-radius: 8px;
     padding: 10px 0;
     opacity: 1;
-    pointer-events: none;
-    transition: opacity 1.8s;
-    z-index: 20;
+    transition: all 1.8s
 }
 
 .fade-text.hide {
     opacity: 0;
-    transition: opacity 1.8s;
+    transition: all 1.8s;
 }
 
+.fade-text #handstand{
+    color: yellow;
+}
 
+#skill-2:hover {
+    transform: scale(1.05);
+}

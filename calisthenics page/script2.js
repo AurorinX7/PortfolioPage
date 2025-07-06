@@ -8,9 +8,14 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('skill-details4')
     ];
     let open1 = false;
-
+    const handstandText = document.getElementById('handstand-text');
     skill1.addEventListener('click', function() {
         open1 = !open1;
+        if (open1) {
+    handstandText.classList.add('hide');
+} else {
+    handstandText.classList.remove('hide');
+}
         details1.forEach((detail, i) => {
             if (open1) {
                 setTimeout(() => {
