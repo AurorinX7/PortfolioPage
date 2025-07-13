@@ -84,16 +84,20 @@ body {
     height: 230px;
     width: 40%;
     margin: 20px 0;
-    background-color: #bfa;
+    background-image: url(/images/calisthenics/marc-kleen-Jo025H0ILaM-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.2em;
     cursor: pointer;
+    border: 5px solid white;
     border-radius: 10px;
     box-shadow: 0 2px 8px #0002;
     user-select: none;
     z-index: 1;
+    transition: all 0.5s;
 }
 
 .skill-details {
@@ -131,24 +135,39 @@ body {
     top: 0px;
     left: 350px;
     height: 200px;
+    background-image: url(/images/calisthenics/handstand.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #skill-details2 {  
     top: 0px;
     left: 750px;
     height: 200px;
+    background-image: url(/images/calisthenics/handstand_press.png);
+    background-size: 100% 100%;
+    background-position: bottom;
 }
 
 #skill-details3 {  
     top: 0px;
     left: 1150px;
     height: 200px;
+    background-image: url(https://gmb.io/wp-content/uploads/2015/11/2017_HSPU_Ryan_04.jpg);
+    background-size: cover;
+    background-position: center;
+
 }
 
 #skill-details4 {
     top: 0px;
     left: 1550px;
     height: 200px;
+    background-image: url(https://i.ytimg.com/vi/R1iCQnAtveU/maxresdefault.jpg);
+    background-size: cover;
+
+
 }
 
 #skill-details1-2 {  
@@ -289,5 +308,118 @@ body {
     opacity: 0.5;
 }
 
+#skill-details1::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgb(0, 90, 0);
+    opacity: 0;
+    transition: opacity 0.7s;
+    border-radius: 8px;
+}
+
+#skill-details1:hover::after {
+    opacity: 0.5;
+}
+
+#skill-details2::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgb(0, 90, 0);
+    opacity: 0;
+    transition: opacity 0.7s;
+    border-radius: 8px;
+}
+
+#skill-details2:hover::after {
+    opacity: 0.5;
+}
+
+#skill-details3::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgb(100, 0, 0);
+    opacity: 0;
+    transition: opacity 0.7s;
+    border-radius: 8px;
+}
+
+#skill-details3:hover::after {
+    opacity: 0.5;
+}
+
+#skill-details4::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgb(100, 0, 0);
+    opacity: 0;
+    transition: opacity 0.7s;
+    border-radius: 8px;
+}
+
+#skill-details4:hover::after {
+    opacity: 0.5;
+}
+
+#skill:hover {
+    transform: scale(1.05);
+}
+
+#side-menu {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Start hidden off-screen */
+  width: 250px;
+  height: 100%;
+  background: #222;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  transition: left 0.3s;
+  z-index: 1000;
+}
+#side-menu.open {
+  left: 0; /* Slide in */
+}
+#side-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;
+  font-size: 18px;
+  transition: all 0.5s;
+  margin-top: 25px;
+}
+#menu-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1100;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+#side-menu a:hover {
+    color: aqua;
+}
+
+#menu-btn:hover {
+    color: yellow;
+}
+
+#menu-btn.active {
+  position: fixed;
+}
 
 
