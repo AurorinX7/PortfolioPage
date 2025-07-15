@@ -83,7 +83,6 @@ body {
     position: relative;
     height: 230px;
     width: 40%;
-    margin: 20px 0;
     background-image: url(/images/calisthenics/marc-kleen-Jo025H0ILaM-unsplash.jpg);
     background-size: cover;
     background-position: center;
@@ -207,7 +206,6 @@ body {
     position: relative;
     height: 230px;
     width: 40%;
-    margin: 20px 0;
     background-image: url(https://i.redd.it/t4thwoiudncb1.jpg);
     background-size: cover;
     border: 5px solid white;
@@ -372,6 +370,93 @@ body {
     transform: scale(1.05);
 }
 
+#skill-3 {
+    position: relative;
+    height: 230px;
+    width: 40%;
+    background-image: url(https://weighttraining.guide/wp-content/uploads/2023/03/Why-you-should-be-doing-pull-ups.png); /* or any image you want */
+    background-size: cover;
+    border: 5px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 10px;
+    user-select: none;
+    transition: all 0.5s;
+}
+
+#skill-details1-3::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgb(0, 90, 0);
+    opacity: 0;
+    transition: opacity 0.7s;
+    border-radius: 8px;
+}
+
+#skill-details1-3:hover::after {
+    opacity: 0.5;
+}
+
+#skill-details2-3::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgb(100, 0, 0);
+    opacity: 0;
+    transition: opacity 0.7s;
+    border-radius: 8px;
+}
+
+#skill-details2-3:hover::after {
+    opacity: 0.5;
+}
+
+#skill-details3-3::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgb(100, 0, 0);
+    opacity: 0;
+    transition: opacity 0.7s;
+    border-radius: 8px;
+}
+
+#skill-details3-3:hover::after {
+    opacity: 0.5;
+}
+
+#skill-details4-3::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgb(100, 0, 0);
+    opacity: 0;
+    transition: opacity 0.7s;
+    border-radius: 8px;
+}
+
+#skill-details4-3:hover::after {
+    opacity: 0.5;
+}
+
+
+#skill-3:hover {
+    transform: scale(1.05);
+}
+
+#skill-details1-3 { top: 0px; left: 350px; height: 200px; background: #2222; background-image: url(/images/calisthenics/pullups.png); background-size: cover;}
+#skill-details2-3 { top: 0px; left: 750px; height: 200px; background: #2222; background-image: url(https://madbarzpictures.blob.core.windows.net/madbarzpictures/pullup_blog_muscleup_3.jpg); background-size: cover;}
+#skill-details3-3 { top: 0px; left: 1150px; height: 200px; background: #2222; background-image: url(https://cdn.prod.website-files.com/674732398a7cbc934e4c2f56/67729e277bf6af1d800e5912_675c0473aec4a6e825877229_Calixpert-Slow-Muscle-Up.webp); background-size: cover;}
+#skill-details4-3 { top: 0px; left: 1550px; height: 200px; background: #2222; background-image: url(https://i.ytimg.com/vi/dC858JAfmzY/maxresdefault.jpg); background-size: cover;}
+
 #side-menu {
   position: fixed;
   top: 0;
@@ -422,4 +507,41 @@ body {
   position: fixed;
 }
 
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply the animation to main wrappers */
+#container,
+#content-wrapper,
+#skill-container,
+#skill-container-2,
+#skill-container-3 {
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+}
+
+/* Stagger the animation for a nicer effect */
+#container {
+    animation-delay: 0.1s;
+}
+#content-wrapper {
+    animation-delay: 0.3s;
+}
+#skill-container {
+    animation-delay: 0.5s;
+}
+#skill-container-2 {
+    animation-delay: 0.7s;
+}
+#skill-container-3 {
+    animation-delay: 0.9s;
+}
 

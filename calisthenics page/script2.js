@@ -73,6 +73,53 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// ...existing code...
+
+document.addEventListener('DOMContentLoaded', function() {
+    // ... skill1 and skill2 code ...
+
+    // Third skill container
+    const skill3 = document.getElementById('skill-3');
+    const details3 = [
+        document.getElementById('skill-details1-3'),
+        document.getElementById('skill-details2-3'),
+        document.getElementById('skill-details3-3'),
+        document.getElementById('skill-details4-3')
+    ];
+    let open3 = false;
+    const plancheText3 = document.getElementById('planche-text-3');
+
+    if (skill3) { // Prevent errors if not found
+        skill3.addEventListener('click', function() {
+            open3 = !open3;
+            if (open3) {
+                plancheText3.classList.add('hide');
+            } else {
+                plancheText3.classList.remove('hide');
+            }
+            details3.forEach((detail, i) => {
+                if (open3) {
+                    setTimeout(() => {
+                        detail.style.display = 'block';
+                        setTimeout(() => {
+                            detail.classList.add('active');
+                        }, 10);
+                    }, i * 200);
+                } else {
+                    setTimeout(() => {
+                        detail.classList.remove('active');
+                        setTimeout(() => {
+                            detail.style.display = 'none';
+                        }, 400);
+                    }, (details3.length - 1 - i) * 200);
+                }
+            });
+        });
+    }
+
+    // ...menu code...
+});
+
 const menuBtn = document.getElementById('menu-btn');
 const sideMenu = document.getElementById('side-menu');
 
